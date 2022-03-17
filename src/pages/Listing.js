@@ -74,12 +74,12 @@ if(loading){
                 <li>
                     {listing.bathrooms>1?`${listing.bathrooms} Bathrooms`:'1 Bathroom'}
                 </li>
-                <li>
-                    {listing.parking&&'Parking available'}
-                </li>
-                <li>
-                    {listing.furnished&&'Furnished'}
-                </li>
+                {listing.parking&&(
+                    <li>Parking available</li>
+                )}
+                {listing.parking&&(
+                    <li>Furnished</li>
+                )}
             </ul>
             {/* <p className="listingLocationTitle">Location on map</p>
             <div className="leafletContainer">

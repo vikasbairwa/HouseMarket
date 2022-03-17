@@ -27,7 +27,7 @@ function OAuth() {
 
         } catch (error) {
             console.log(error)
-            toast.error('Could Not AuthoriZe With Google')
+            toast.error('Could Not Authorize With Google')
         }
         
     }

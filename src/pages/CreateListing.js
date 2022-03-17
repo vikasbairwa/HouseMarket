@@ -63,6 +63,7 @@ function CreateListing() {
             return
         }
 
+
         let GeoLocation = {}
         let location
         if (geoLocationEnabled) {
@@ -122,7 +123,7 @@ function CreateListing() {
             [...images].map((image)=>imgStore(image))
         ).catch(()=>{
             setLoading(false)
-            toast.error("Images can't be uploaded")
+            toast.error("Size of the images needs to be less than 2MB")
             return
         })
         const formDataCopy = {
